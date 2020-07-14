@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<style type="text/css">
+		.flex{
+			display: flex;
+			/*flex-direction: row;
+			justify-content: space-around;
+			flex-wrap: wrap;*/
+			height: 600px;
+			/*align-items: baseline;*/
+			flex-wrap: wrap;
+			align-content: flex-start;
+
+
+		}
+
+		.flex div{
+			padding: 1%;
+			margin: 1%;
+			text-align: center;
+			width:100px;
+			background-color: skyblue;
+			font-size: 30px;
+			border: 2px solid #ddd;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="flex">
+		<div style="order: 3">A</div>
+		<div style="order: 1">B</div>
+		<div style="flex-basis: 500px">C</div>
+		<div style="flex-grow: 1">D</div>
+		<div style="flex-shrink: 0">E</div>
+		<div style="flex: 4 0 200px">G</div>
+		<!-- <div>F</div>
+		<div>G</div>
+		<div>H</div>
+		<div>I</div>
+		<div>J</div>
+		<div>K</div>
+		<div>L</div> -->
+	</div>
+
+</body>
+</html>
